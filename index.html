@@ -3,325 +3,308 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Immigration to Manitoba | Home</title>
-    <!-- Province of Manitoba logo icon  -->
+    <title>Immigration to MB | Home</title>
+    <!-- Province of Manitoba icon-->
     <link rel="icon" type="image/jfif" sizes="32x32" href="./images/mb_icon.jfif">
-    <!-- De schimbat daca trebu Remix icons -->
+    <!-- Imported icons from https://remixicon.com/ via npm install-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- Swiper.js styles -->
+    <!-- Swiper.js carousel -->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header that consists of links to 6 pages, toggle buttons to switch between light and dark mode, search button and subscription to Newsletter -->
     <header class="header" id="header">
-        
+        <!--Navigation bar-->
         <nav class="navbar container">
-
-            <a href="./index.html">
-                <h2 class="logo">Immigration to Manitoba</h2>
+            <!-- Website logotype -->
+            <a href="index.html">
+                <h2 class="logotype">Immigration to Manitoba</h2>
             </a>
-
+            <!-- Navigation bar menu items/links to pages -->
             <div class="menu" id="menu">
                 <ul class="list">
                     <li class="list-item">
-                        <a href="immigration.html" class="list-link current">Immigration</a>
+                        <a href="#" class="list-link current" >Home</a>
                     </li>
                     <li class="list-item">
-                        <a href="settlement.html" class="list-link">Settlement</a>
+                        <a href="./pages/immigration.html" class="list-link">Immigration</a>
                     </li>
                     <li class="list-item">
-                        <a href="education.html" class="list-link">Education</a>
+                        <a href="./pages/settlement.html" class="list-link">Settlement</a>
                     </li>
                     <li class="list-item">
-                        <a href="work.html" class="list-link">Work</a>
+                        <a href="./pages/education.html" class="list-link">Education</a>
                     </li>
                     <li class="list-item">
-                        <a href="explore.html" class="list-link">Explore</a>
+                        <a href="./pages/work.html" class="list-link">Work</a>
                     </li>
                     <li class="list-item">
-                        <a href="contact.html" class="list-link">Contact</a>
+                        <a href="./pages/contact.html" class="list-link">Contact</a>
                     </li>
+                    <!-- This element-link is hidden on large screen and is visible when toggling the menu button on small viewports. It directs users to the bottom of the page where they can sign up for the website's newsletter-->
                     <li class="list-item screen-lg-hidden">
-                        <a href="#" class="list-link">Sign in</a>
-                    </li>
-                    <li class="list-item screen-lg-hidden">
-                        <a href="#" class="list-link">Sign up</a>
+                        <a href="#newsletter" class="list-link">Newsletter</a>
                     </li>
                 </ul>
             </div>
+            <!-- Right-hand side elements of the navbar-->
             <div class="list list-right">
-                <button class="btn place-items-center" id="theme-toggle-btn">
+                <!-- Sun and Moon toggle buttons that allows users to switch the website theme from dark to light and vice-versa -->
+                <button class="btn align-center" id="theme-btn">
                     <i class="ri-sun-line sun-icon"></i>
-                    <i class="ri-moon-line moon-icon"></i>
+                    <i class="ri-moon-fill moon-icon"></i>
                 </button>
-                <button class="btn place-items-center" id="search-icon-btn">
-                    <i class="ri-search-line"></i>
+                <!-- Search button/icon that opens a search input field and allows users to search the website for desired articles/news-->
+                <button class="btn align-center" id="search-icon-btn">
+                    <i class="ri-search-eye-line"></i>
                 </button>
-                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
-                    <i class="ri-menu-3-line open-menu-icon"></i>
-                    <i class="ri-close-line close-menu-icon"></i>
+                <!-- On small viewports, these elements open and close the website menu -->
+                <button class="btn align-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-line open-menu-icon"></i>
+                    <i class="ri-close-circle-line close-menu-icon"></i>
                 </button>
-                <a href="#" class="list-link screen-sm-hidden">Sign in</a>
-                <a href="#" class="list-link screen-sm-hidden btn sign-up-btn fancy-border">
-                    <span>Sign up</span>
-                </a>
-
+                <!-- This element-link directs users to the bottom of the page where they can sign up for the website's newsletter -->
+                <a href="#newsletter" class="list-link screen-sm-hidden">Subscribe to our Newsletter</a>
             </div>
         </nav>
-
     </header>
-    <!-- Search -->
+
+    <!-- Search form -->
     <div class="search-form-container container" id="search-form-container">
-        <div class="form-container-inner">
+        <div class="form-container">
             <form action="" class="form">
-                <input class="form-input" type="text" placeholder="What are you looking for?">
+                <input class="form-input" type="text" placeholder="Enter your search here">
                 <button class="btn form-btn" type="submit">
-                    <i class="ri-search-line"></i>
+                    <i class="ri-search-eye-line"></i>
                 </button>
             </form>
             <span class="form-note">Press ESC to close.</span>
         </div>
-        <button class="btn form-close-btn place-items-center" id="form-close-btn">
-            <i class="ri-close-line"></i>
+        <button class="btn form-close-btn align-center" id="form-close-btn">
+            <i class="ri-close-circle-line"></i>
         </button>
     </div>
+
     <!-- Featured articles -->
     <section class="featured-articles section section-header-offset">
-
         <div class="featured-articles-container container d-grid">
             <div class="featured-content d-grid">
 
                 <div class="headline-banner">
-                    <h3 class="headline fancy-border">
-                        <span class="place-items-center">Announcements</span>
+                    <h3 class="headline headline-border">
+                        <span class="align-center">Brief:</span>
                     </h3>
-                    <span class="headline-description">MANITOBA GOVERNMENT ANNOUNCES INCREASE IN ALLOCATION FOR MPNP PROGRAM FOR 2023!</span>
+                    <span class="headline-description">Next MPNP Immigration Selection Draw is scheduled for March 13, 2023. Details here: <a href="https://www.immigratemanitoba.com/notices/eoi-draw/" target="_blank"><u> MPNP EOI Draws</u></span>
                 </div>
 
-                <a href="./post.html" class="article featured-article featured-article-1">
-                    <img src="./images/featured/featured-1.jpg" alt="" class="article-image">
-                    <span class="article-category">Technology</span>
+                <a href="./pages/immigration.html" class="article featured-article featured-article-1">
+                    <img src="./images/featured/featured-1.jpg" alt="Image of City of Winnipeg Bridge and Humans Rights Museum by Red River at Sunset" class="article-image">
+                    <span class="article-category">Immigration to Manitoba</span>
                     <div class="article-data-container">
                         <div class="article-data">
-                            <span>Dec 5th 2021</span>
+                            <span>March 9, 2023</span>
                             <span class="article-data-spacer"></span>
-                            <span>8 Min read</span>
+                            <span>3 Min read</span>
                         </div>
-                        <h3 class="title article-title">Is VR the future?</h3>
+                        <h3 class="title article-title">2023 Immigration Allocation</h3>
                     </div>
                 </a>
 
-                <a href="./post.html" class="article featured-article featured-article-2">
-                    <img src="./images/featured/featured-2.jpg" alt="" class="article-image">
-                    <span class="article-category">Food</span>
+                <a href="./pages/work.html" class="article featured-article featured-article-2">
+                    <img src="./images/featured/featured-2.png" alt="" class="article-image">
+                    <span class="article-category">Work in Manitoba</span>
                     <div class="article-data-container">
                         <div class="article-data">
-                            <span>Dec 6th 2021</span>
-                            <span class="article-data-spacer"></span>
-                            <span>4 Min read</span>
-                        </div>
-                        <h3 class="title article-title">Fine dining 101</h3>
-                    </div>
-                </a>
-
-                <a href="./post.html" class="article featured-article featured-article-3">
-                    <img src="./images/featured/featured-3.jpg" alt="" class="article-image">
-                    <span class="article-category">Health</span>
-                    <div class="article-data-container">
-                        <div class="article-data">
-                            <span>Dec 5th 2021</span>
+                            <span>February 11, 2023</span>
                             <span class="article-data-spacer"></span>
                             <span>5 Min read</span>
                         </div>
-                        <h3 class="title article-title">Natural fat burner</h3>  
+                        <h3 class="title article-title">Destination Canada 2023</h3>
+                    </div>
+                </a>
+
+                <a href="./pages/settlement.html" class="article featured-article featured-article-3">
+                    <img src="./images/featured/featured-3.png" alt="" class="article-image">
+                    <span class="article-category">Settlement in Manitoba</span>
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>February 3, 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>5 Min read</span>
+                        </div>
+                        <h3 class="title article-title">Applications for Newcomer Community Integration Support Program, Manitoba</h3>  
                     </div>
                 </a>
             </div>
-            <!-- SIDEBAR -->
+            <!-- Sidebar content -->
             <div class="sidebar d-grid">
-                <h3 class="title featured-content-title">Trending news</h3>
-                <a href="#" class="trending-news-box">
+                <h3 class="title featured-content-title">Trending news and articles</h3>
+                <!-- article -->
+                <a href="./pages/education.html" class="trending-news-box">
                     <div class="trending-news-img-box">
-                        <span class="trending-number place-items-center">01</span>
-                        <img src="./images/trending/trending_1.jpg" alt="" class="article-image">
+                        <span class="trending-number align-center">01</span>
+                        <img src="./images/trending/trending-1.png" alt="an a colorful image of laptop and 6 different subjects taught in schools" class="article-image">
                     </div>
-
                     <div class="trending-news-data">
                         <div class="article-data">
-                            <span>23 Dec 2021</span>
+                            <span>March 8, 2023</span>
                             <span class="article-data-spacer"></span>
-                            <span>3 Min read</span>
+                            <span>8 Min read</span>
                         </div>
-                        <h3 class="title article-title">Sample article title</h3>
+                        <h3 class="title article-title">K to 12 Education Plan</h3>
                     </div>
                 </a>
-
-                <a href="#" class="trending-news-box">
+                <!-- article -->
+                <a href="./pages/trending/immigration-story.html" class="trending-news-box">
                     <div class="trending-news-img-box">
-                        <span class="trending-number place-items-center">02</span>
-                        <img src="./images/trending/trending_2.jpg" alt="" class="article-image">
+                        <span class="trending-number align-center">02</span>
+                        <img src="./images/trending/trending-2.jpg" alt="" class="article-image">
                     </div>
-
                     <div class="trending-news-data">
-
                         <div class="article-data">
-                            <span>23 Dec 2021</span>
+                            <span>January 8, 2023</span>
                             <span class="article-data-spacer"></span>
                             <span>3 Min read</span>
                         </div>
-
-                        <h3 class="title article-title">Sample article title</h3>
-
+                        <h3 class="title article-title">My Immigration Story</h3>
                     </div>
                 </a>
-
-                <a href="#" class="trending-news-box">
+                <!-- article -->
+                <a href="./pages/trending/immigration-story-2.html" class="trending-news-box">
                     <div class="trending-news-img-box">
-                        <span class="trending-number place-items-center">03</span>
-                        <img src="./images/trending/trending_3.jpg" alt="" class="article-image">
+                        <span class="trending-number align-center">03</span>
+                        <img src="./images/trending/trending-3.png" alt="" class="article-image">
                     </div>
-
                     <div class="trending-news-data">
-
                         <div class="article-data">
-                            <span>23 Dec 2021</span>
+                            <span>February 1, 2023</span>
                             <span class="article-data-spacer"></span>
                             <span>3 Min read</span>
                         </div>
-
-                        <h3 class="title article-title">Sample article title</h3>
-
+                        <h3 class="title article-title">Polina's History of Success</h3>
                     </div>
                 </a>
-
-                <a href="#" class="trending-news-box">
+                <!-- article -->
+                <a href="./pages/trending/history-mb.html" class="trending-news-box">
                     <div class="trending-news-img-box">
-                        <span class="trending-number place-items-center">04</span>
-                        <img src="./images/trending/trending_4.jpg" alt="" class="article-image">
+                        <span class="trending-number align-center">04</span>
+                        <img src="./images/trending/trending-4.jpg" alt="" class="article-image">
                     </div>
-
                     <div class="trending-news-data">
-
                         <div class="article-data">
-                            <span>23 Dec 2021</span>
+                            <span>March 6, 2023</span>
                             <span class="article-data-spacer"></span>
-                            <span>3 Min read</span>
+                            <span>5 Min read</span>
                         </div>
-
-                        <h3 class="title article-title">Sample article title</h3>
-
+                        <h3 class="title article-title">The history of Manitoba</h3>
                     </div>
                 </a>
-
-                <a href="#" class="trending-news-box">
+                <!-- article -->
+                <a href="./pages/trending/notice.html" class="trending-news-box">
                     <div class="trending-news-img-box">
-                        <span class="trending-number place-items-center">05</span>
-                        <img src="./images/trending/trending_5.jpg" alt="" class="article-image">
+                        <span class="trending-number align-center">05</span>
+                        <img src="./images/trending/trending-5.png" alt="" class="article-image">
                     </div>
-
                     <div class="trending-news-data">
-
                         <div class="article-data">
-                            <span>23 Dec 2021</span>
+                            <span>April 1, 2022</span>
                             <span class="article-data-spacer"></span>
-                            <span>3 Min read</span>
+                            <span>8 Min read</span>
                         </div>
-
-                        <h3 class="title article-title">Sample article title</h3>
-
+                        <h3 class="title article-title">MPNP notice COVID-19</h3>
                     </div>
                 </a>
 
             </div>
-
         </div>
-
     </section>
-    <!-- Quick read -->
-    <section class="quick-read section">
 
+    <!-- Select read -->
+    <section class="quick-read section">
         <div class="container">
 
-            <h2 class="title section-title" data-name="Quick read">Quick read</h2>
+            <h2 class="title section-title" data-name="Select Read">Select Read</h2>
             <!-- Slider main container -->
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <a href="#" class="article swiper-slide">
-                        <img src="./images/quick_read/quick_read_1.jpg" alt="" class="article-image">
+                    
+                    <!-- Slide1 -->
+                    <a href="./pages/trending/mb--streams.html" class="article swiper-slide">
+                        <img src="./images/trending/select-read-1.png" alt="" class="article-image">
                         <div class="article-data-container">
                             <div class="article-data">
-                                <span>23 Dec 2021</span>
+                                <span>January 1, 2023</span>
                                 <span class="article-data-spacer"></span>
-                                <span>3 Min read</span>
+                                <span>5 Min read</span>
                             </div>
-                            <h3 class="title article-title">Sample article title</h3>
+                            <h3 class="title article-title">Manitoba Immigration Streams</h3>
                         </div>
                     </a>
-                    <!-- Slides -->
-                    <a href="#" class="article swiper-slide">
-                        <img src="./images/quick_read/quick_read_2.jpg" alt="" class="article-image">
+                    <!-- Slide2 -->
+                    <a href="./pages/trending/history-mb.html" class="article swiper-slide">
+                        <img src="./images/trending/trending-4.jpg" alt="" class="article-image">
                         <div class="article-data-container">
                             <div class="article-data">
-                                <span>23 Dec 2021</span>
+                                <span>March 6, 2023</span>
                                 <span class="article-data-spacer"></span>
                                 <span>3 Min read</span>
                             </div>
-                            <h3 class="title article-title">Sample article title</h3>
+                            <h3 class="title article-title">The History of Manitoba</h3>
                         </div>
                     </a>
-                    <!-- Slides -->
-                    <a href="#" class="article swiper-slide">
-                        <img src="./images/quick_read/quick_read_3.jpg" alt="" class="article-image">
+                    <!-- Slide3 -->
+                    <a href="./pages/work.html" class="article swiper-slide">
+                        <img src="./images/featured/featured-2.png" alt="" class="article-image">
                         <div class="article-data-container">
                             <div class="article-data">
-                                <span>23 Dec 2021</span>
+                                <span>February 11, 2023</span>
                                 <span class="article-data-spacer"></span>
-                                <span>3 Min read</span>
+                                <span>5 Min read</span>
                             </div>
-                            <h3 class="title article-title">Sample article title</h3>
+                            <h3 class="title article-title">Destination Canada 2023</h3>
                         </div>
                     </a>
-                    <!-- Slides -->
-                    <a href="#" class="article swiper-slide">
-                        <img src="./images/quick_read/quick_read_4.jpg" alt="" class="article-image">
+                    <!-- Slide4 -->
+                    <a href="./pages/education.html" class="article swiper-slide">
+                        <img src="./images/trending/trending-1.png" alt="" class="article-image">
                         <div class="article-data-container">
                             <div class="article-data">
-                                <span>23 Dec 2021</span>
+                                <span>March 8, 2023</span>
                                 <span class="article-data-spacer"></span>
-                                <span>3 Min read</span>
+                                <span>8 Min read</span>
                             </div>
-                            <h3 class="title article-title">Sample article title</h3>
+                            <h3 class="title article-title">K to 12 Education Plan</h3>
                         </div>
                     </a>
-                    <!-- Slides -->
-                    <a href="#" class="article swiper-slide">
-                        <img src="./images/quick_read/quick_read_5.jpg" alt="" class="article-image">
+                    <!-- Slide5 -->
+                    <a href="./pages/trending/immigration-story.html" class="article swiper-slide">
+                        <img src="./images/trending/trending-2.jpg" alt="" class="article-image">
                         <div class="article-data-container">
                             <div class="article-data">
-                                <span>23 Dec 2021</span>
+                                <span>January 8, 2023</span>
                                 <span class="article-data-spacer"></span>
                                 <span>3 Min read</span>
                             </div>
-                            <h3 class="title article-title">Sample article title</h3>
+                            <h3 class="title article-title">My Immigration Story</h3>
                         </div>
                     </a>
-                    <!-- Slides -->
-                    <a href="#" class="article swiper-slide">
-                        <img src="./images/quick_read/quick_read_6.jpg" alt="" class="article-image">
+                    <!-- Slide6 -->
+                    <a href="./pages/trending/immigration-story-2.html" class="article swiper-slide">
+                        <img src="./images/trending/trending-3-3.jpg" alt="" class="article-image">
                         <div class="article-data-container">
                             <div class="article-data">
-                                <span>23 Dec 2021</span>
+                                <span>February 1, 2023</span>
                                 <span class="article-data-spacer"></span>
                                 <span>3 Min read</span>
                             </div>
-                            <h3 class="title article-title">Sample article title</h3>
+                            <h3 class="title article-title">Polina's History of Success</h3>
                         </div>
                     </a>
                 </div>
+
                 <!-- Navigation buttons -->
                 <div class="swiper-button-prev swiper-controls"></div>
                 <div class="swiper-button-next swiper-controls"></div>
@@ -332,108 +315,74 @@
 
     </section>
 
-
     <!-- Older posts -->
     <section class="older-posts section">
         <div class="container">
             <h2 class="title section-title" data-name="Older posts">Older posts</h2>
-            
             <div class="older-posts-grid-wrapper d-grid">
 
-                <a href="#" class="article d-grid">
+                <a href="./pages/trending/notice.html" class="article d-grid">
                     <div class="older-posts-article-image-wrapper">
-                        <img src="./images/older_posts/older_posts_1.jpg" alt="" class="article-image">
-                    </div>
-
-                    <div class="article-data-container">
-                        <div class="article-data">
-                            <span>23 Dec 2021</span>
-                            <span class="article-data-spacer"></span>
-                            <span>3 Min read</span>
-                        </div>
-                        <h3 class="title article-title">Sample article title</h3>
-                        <p class="article-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.</p>
-                    </div>
-                </a>
-
-                <a href="#" class="article d-grid">
-                    <div class="older-posts-article-image-wrapper">
-                        <img src="./images/older_posts/older_posts_2.jpg" alt="" class="article-image">
+                        <img src="./images/trending/trending-5.png" alt="" class="article-image">
                     </div>
                     <div class="article-data-container">
                         <div class="article-data">
-                            <span>23 Dec 2021</span>
+                            <span>April 1, 2022</span>
                             <span class="article-data-spacer"></span>
-                            <span>3 Min read</span>
+                            <span>8 Min read</span>
                         </div>
-                        <h3 class="title article-title">Sample article title</h3>
-                        <p class="article-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.</p>
+                        <h3 class="title article-title">MPNP notice on COVID-19</h3>
+                        <p class="article-description">Do not submit an Expression of Interest (EOI) if you do not currently meet all the eligibility criteria of the stream to which you are applying.</p>
                     </div>
                 </a>
 
-                <a href="#" class="article d-grid">
+                <a href="./pages/trending/rural-vitality.html" class="article d-grid">
                     <div class="older-posts-article-image-wrapper">
-                        <img src="./images/older_posts/older_posts_3.jpg" alt="" class="article-image">
+                        <img src="./images/older-posts/older-posts-2.jpg" alt="" class="article-image">
                     </div>
                     <div class="article-data-container">
                         <div class="article-data">
-                            <span>23 Dec 2021</span>
+                            <span>November 1, 2022</span>
                             <span class="article-data-spacer"></span>
-                            <span>3 Min read</span>
+                            <span>5 Min read</span>
                         </div>
-                        <h3 class="title article-title">Sample article title</h3>
-                        <p class="article-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.</p>
+                        <h3 class="title article-title">Rural Economic Vitality in Manitoba</h3>
+                        <p class="article-description">Over the last two decades, the MPNP brought in more than 130,000 economic immigrants to Manitoba of whom more than 20% established themselves in regional communities throughout the province.</p>
                     </div>
                 </a>
 
-                <a href="#" class="article d-grid">
+                <a href="./pages/trending/post-secondary-education.html" class="article d-grid">
                     <div class="older-posts-article-image-wrapper">
-                        <img src="./images/older_posts/older_posts_4.jpg" alt="" class="article-image">
+                        <img src="./images/older-posts/older-posts-3.jfif" alt="" class="article-image">
                     </div>
                     <div class="article-data-container">
                         <div class="article-data">
-                            <span>23 Dec 2021</span>
+                            <span>November 3, 2022</span>
                             <span class="article-data-spacer"></span>
-                            <span>3 Min read</span>
+                            <span>5 Min read</span>
                         </div>
-                        <h3 class="title article-title">Sample article title</h3>
-                        <p class="article-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.</p>
+                        <h3 class="title article-title">Post-Secondary Education in Manitoba</h3>
+                        <p class="article-description">Manitoba offers international students the opportunity to access world-class education with affordable tuition fees.</p>
                     </div>
                 </a>
 
-                <a href="#" class="article d-grid">
+                <a href="./pages/trending/off-campus-work.html" class="article d-grid">
                     <div class="older-posts-article-image-wrapper">
-                        <img src="./images/older_posts/older_posts_5.jpg" alt="" class="article-image">
+                        <img src="./images/older-posts/older-posts-4.jpg" alt="" class="article-image">
                     </div>
                     <div class="article-data-container">
                         <div class="article-data">
-                            <span>23 Dec 2021</span>
+                            <span>October 7, 2022</span>
                             <span class="article-data-spacer"></span>
                             <span>3 Min read</span>
                         </div>
-                        <h3 class="title article-title">Sample article title</h3>
-                        <p class="article-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.</p>
+                        <h3 class="title article-title">Canada Allows International Students To Work Unlimited Hours Off-Campus</h3>
+                        <p class="article-description">Canada is to lift the limit on the number of hours international students can work off-campus during their studies.</p>
                     </div>
                 </a>
-
-                <a href="#" class="article d-grid">
-                    <div class="older-posts-article-image-wrapper">
-                        <img src="./images/older_posts/older_posts_6.jpg" alt="" class="article-image">
-                    </div>
-                    <div class="article-data-container">
-                        <div class="article-data">
-                            <span>23 Dec 2021</span>
-                            <span class="article-data-spacer"></span>
-                            <span>3 Min read</span>
-                        </div>
-                        <h3 class="title article-title">Sample article title</h3>
-                        <p class="article-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.</p>
-                    </div>
-                </a>
-            </div>
 
             <div class="see-more-container">
-                <a href="#" class="btn see-more-btn place-items-center">
+                <a href="#" class="btn see-more-btn align-center">
                     See more 
                     <i class="ri-arrow-right-s-line"></i>
                 </a>
@@ -441,74 +390,33 @@
         </div>
 
     </section>
-    <!-- Popular tags -->
-    <section class="popular-tags section">
-            <div class="container">
-                <h2 class="title section-title" data-name="Popular tags">Popular tags</h2>
-                <div class="popular-tags-container d-grid">
-
-                    <a href="#" class="article">
-                        <span class="tag-name">#Travel</span>
-                        <img src="./images/tags/travel-tag.jpg" alt="" class="article-image">
-                    </a>
-
-                    <a href="#" class="article">
-                        <span class="tag-name">#Food</span>
-                        <img src="./images/tags/food-tag.jpg" alt="" class="article-image">
-                    </a>
-
-                    <a href="#" class="article">
-                        <span class="tag-name">#Technology</span>
-                        <img src="./images/tags/technology-tag.jpg" alt="" class="article-image">
-                    </a>
-
-                    <a href="#" class="article">
-                        <span class="tag-name">#Health</span>
-                        <img src="./images/tags/health-tag.jpg" alt="" class="article-image">
-                    </a>
-
-                    <a href="#" class="article">
-                        <span class="tag-name">#Nature</span>
-                        <img src="./images/tags/nature-tag.jpg" alt="" class="article-image">
-                    </a>
-
-                    <a href="#" class="article">
-                        <span class="tag-name">#Fitness</span>
-                        <img src="./images/tags/fitness-tag.jpg" alt="" class="article-image">
-                    </a>
-
-                </div>
-            </div>
-    </section>
-
-<!-- Newsletter -->
+    
+    <!-- Newsletter section where users can sign up for the website newsletter-->
     <section class="newsletter section">
         <div class="container">
-            <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
-            <div class="form-container-inner">
-                <h6 class="title newsletter-title">Subscribe to Immigration to Manitoba Newsletter</h6>
+            <div class="form-container">
+                <h6 class="title newsletter-title" id="newsletter">Subscribe to Immigration to Manitoba Newsletter</h6>
                 <p class="newsletter-description">Stay on top with latest news about life in Manitoba, delivered straight to your inbox!</p>
                 <form action="" class="form">
                     <input class="form-input" type="text" placeholder="Email address goes here">
                     <button class="btn form-btn" type="submit">
-                        <i class="ri-mail-send-line"></i>
+                        <i class="ri-mail-send-fill"></i>
                     </button>
                 </form>
             </div>
         </div>
     </section>
 
-<!-- Footer -->
+    <!-- A generic Footer with website description, links to website articles categories and useful external third-party links/resources for users, as well as contact information-->
     <footer class="footer section">
         <div class="footer-container container d-grid">
-            
-            <div class="company-data">
+            <div class="about-info">
 
-                <a href="./index.html">
-                    <h2 class="logo">Immigration to Manitoba</h2>
+                <a href="index.html">
+                    <h2 class="logotype">Immigration to Manitoba</h2>
                 </a>
-                <p class="company-description">Immigration to Manitoba is a newsletter website that shares news on immigration, settling, education and work in Manitoba. A reliable source of information for those interested in starting a new life in this beautiful and vibrant Canadian Province!</p>
-                
+                <p class="footer-description">Immigration to Manitoba is a newsletter website that shares news on immigration, settling, education and work in Manitoba. A reliable source of information for those interested in starting a new life in this beautiful and vibrant Canadian Province!</p>
+                <!-- Social media links, fully functional -->
                 <ul class="list social-media">
                     <li class="list-item">
                         <a href="https://www.facebook.com/groups/2063509447211629" class="list-link" target="_blank"><i class="ri-facebook-circle-line"></i></a>
@@ -517,31 +425,29 @@
                         <a href="https://twitter.com/MBGov" class="list-link" target="_blank"><i class="ri-twitter-line"></i></a>
                     </li>
                 </ul>
-
+                <!-- copyright -->
                 <span class="copyright-notice">&copy;2023 Immigration to Manitoba. All rights reserved.</span>
             </div>
-
+            <!-- a div with links to articles categories -->
             <div>
                 <h6 class="title footer-title">Categories</h6>
                 <ul class="footer-list list">
                     <li class="list-item">
-                        <a href="immigration.html" class="list-link">Immigrate to Manitoba</a>
+                        <a href="./pages/immigration.html" class="list-link">Immigrate to Manitoba</a>
                     </li>
                     <li class="list-item">
-                        <a href="settlement.html" class="list-link">Settle in Manitoba</a>
+                        <a href="./pages/settlement.html" class="list-link">Settle in Manitoba</a>
                     </li>
                     <li class="list-item">
-                        <a href="education.html" class="list-link">Education in Manitoba</a>
+                        <a href="./pages/education.html" class="list-link">Education in Manitoba</a>
                     </li>
                     <li class="list-item">
-                        <a href="work.html" class="list-link">Work in Manitoba</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="explore.html" class="list-link">Explore Manitoba</a>
+                        <a href="./pages/work.html" class="list-link">Work in Manitoba</a>
                     </li>
                 </ul>
             </div>
 
+            <!-- a div with links to external third party resources -->
             <div>
                 <h6 class="title footer-title">Useful links</h6>
                 <ul class="footer-list list">
@@ -560,23 +466,25 @@
                 </ul>
             </div>
 
+            <!-- div with contact information and F.A.Q -->
             <div>
                 <h6 class="title footer-title">Immigration to Manitoba</h6>
                 <ul class="footer-list list">
                     <li class="list-item">
-                        <a href="contact.html" class="list-link">Contact</a>
+                        <a href="./pages/contact.html" class="list-link">Contact</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">F.A.Q</a>
+                        <a href="./pages/contact.html" class="list-link">F.A.Q</a>
                     </li>
                 </ul>
             </div>
 
         </div>
     </footer>
-<!-- Swiper.js -->
+
+<!--Script for Carousel library Swiper.js -->
     <script src="./js/swiper-bundle.min.js"></script>
-<!-- Custom script -->
-    <script src="./js/main.js"></script>
+<!-- Reference to JavaScript used to perform actions on the website elements -->
+    <script src="./js/scripts.js"></script>
 </body>
 </html>

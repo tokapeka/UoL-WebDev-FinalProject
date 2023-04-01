@@ -1,0 +1,216 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immigration to MB | Contact</title>
+    <!-- Province of Manitoba icon-->
+    <link rel="icon" type="image/jfif" sizes="32x32" href="../images/mb_icon.jfif">
+    <!-- Imported icons from https://remixicon.com/ via npm install-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Swiper.js carousel -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/3e41aebf97.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header that consists of links to 6 pages, toggle buttons to switch between light and dark mode, search button and subscription to Newsletter -->
+    <header class="header" id="header">
+        <!--Navigation bar-->
+        <nav class="navbar container">
+            <!-- Website logotype -->
+            <a href="../index.html">
+                <h2 class="logotype">Immigration to Manitoba</h2>
+            </a>
+            <!-- Navigation bar menu items/links to pages -->
+            <div class="menu" id="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="../index.html" class="list-link">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="immigration.html" class="list-link">Immigration</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="settlement.html" class="list-link">Settlement</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="education.html" class="list-link">Education</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="work.html" class="list-link">Work</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link current" current>Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- Right-hand side elements of the navbar-->
+            <div class="list list-right">
+                <!-- Sun and Moon toggle buttons that allows users to switch the website theme from dark to light and vice-versa -->
+                <button class="btn align-center" id="theme-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-fill moon-icon"></i>
+                </button>
+                <!-- Search button/icon that opens a search input field and allows users to search the website for desired articles/news-->
+                <button class="btn align-center" id="search-icon-btn">
+                    <i class="ri-search-eye-line"></i>
+                </button>
+                <!-- On small viewports, these elements open and close the website menu -->
+                <button class="btn align-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-line open-menu-icon"></i>
+                    <i class="ri-close-circle-line close-menu-icon"></i>
+                </button>
+                <a href="../index.html#newsletter"" class="list-link screen-sm-hidden">Subscribe to our Newsletter</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Search form -->
+    <div class="search-form-container container" id="search-form-container">
+        <div class="form-container">
+            <form action="" class="form">
+                <input class="form-input" type="text" placeholder="Enter your search here">
+                <button class="btn form-btn" type="submit">
+                    <i class="ri-search-eye-line"></i>
+                </button>
+            </form>
+            <span class="form-note">Press ESC to close.</span>
+        </div>
+        <button class="btn form-close-btn align-center" id="form-close-btn">
+            <i class="ri-close-circle-line"></i>
+        </button>
+    </div>
+
+<!-- Contact Form -->
+    <section class="form section">
+        <div class="contact-form">
+            <form>
+
+                <h2 class="title contact-form-title">Send us a message and we'll reply within 5 business days!</h2>
+
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" id="name" required>
+                        <label for="name"><i class="fa-solid fa-user"></i> Your Full Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="number" required>
+                        <label for="number"><i class="fa-solid fa-phone"></i> Phone No.</label>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email"><i class="fa-solid fa-envelope"></i> Your Email</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="message" rows="10" required></textarea>
+                    <label for="message"><i class="fa-solid fa-message"></i> Leave Your Message</label>
+                </div>
+                <button type="submit">Send  <i class="fa-solid fa-paper-plane"></i></button>
+            </form>  
+        </div>
+    </section>
+    
+   <!-- Newsletter section where users can sign up for the website newsletter-->
+    <section class="newsletter section">
+        <div class="container">
+            <div class="form-container">
+                <h6 class="title newsletter-title">Subscribe to Immigration to Manitoba Newsletter</h6>
+                <p class="newsletter-description">Stay on top with latest news about life in Manitoba, delivered straight to your inbox!</p>
+                <form action="" class="form">
+                    <input class="form-input" type="text" placeholder="Email address goes here">
+                    <button class="btn form-btn" type="submit">
+                        <i class="ri-mail-send-fill"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- A generic Footer with website description, links to website articles categories and useful external third-party links/resources for users, as well as contact information-->
+    <footer class="footer section">
+        <div class="footer-container container d-grid">
+            <div class="about-info">
+
+                <a href="../index.html">
+                    <h2 class="logotype">Immigration to Manitoba</h2>
+                </a>
+                <p class="footer-description">Immigration to Manitoba is a newsletter website that shares news on immigration, settling, education and work in Manitoba. A reliable source of information for those interested in starting a new life in this beautiful and vibrant Canadian Province!</p>
+                <!-- Social media links, fully functional -->
+                <ul class="list social-media">
+                    <li class="list-item">
+                        <a href="https://www.facebook.com/groups/2063509447211629" class="list-link" target="_blank"><i class="ri-facebook-circle-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://twitter.com/MBGov" class="list-link" target="_blank"><i class="ri-twitter-line"></i></a>
+                    </li>
+                </ul>
+                <!-- copyright -->
+                <span class="copyright-notice">&copy;2023 Immigration to Manitoba. All rights reserved.</span>
+            </div>
+            <!-- a div with links to articles categories -->
+            <div>
+                <h6 class="title footer-title">Categories</h6>
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="immigration.html" class="list-link">Immigrate to Manitoba</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="settlement.html" class="list-link">Settle in Manitoba</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="education.html" class="list-link">Education in Manitoba</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="work.html" class="list-link">Work in Manitoba</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- a div with links to external third party resources -->
+            <div>
+                <h6 class="title footer-title">Useful links</h6>
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="../index.html" class="list-link">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://manitoba.ca/" class="list-link" target="_blank">Manitoba.ca</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://residents.gov.mb.ca/moving.html" class="list-link" target="_blank">Resources for Residents</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://www.winnipeg.ca/" class="list-link" target="_blank">City of Winnipeg</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- div with contact information and F.A.Q -->
+            <div>
+                <h6 class="title footer-title">Immigration to Manitoba</h6>
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">F.A.Q</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+<!--Script for Carousel library Swiper.js -->
+<script src="../js/swiper-bundle.min.js"></script>
+<!-- Reference to JavaScript used to perform actions on the website elements -->
+<script src="../js/scripts.js"></script>
+</body>
+</html>
